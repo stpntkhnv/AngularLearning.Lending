@@ -1,0 +1,166 @@
+@font-face {
+    font-family: baldGilroy;
+    src: url(assets/fonts/Gilroy-Bold.ttf);
+  }
+
+@font-face {
+    font-family: mediumGilroy;
+    src: url(assets/fonts/Gilroy-Medium.ttf);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mediumGilroy;
+}
+
+.programs_list_item_text{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+.programs_list_item_img{
+    height: 90px;
+    width: 90px;
+}
+
+.bg-gray{
+    background-color: #F6F6F6;
+}
+
+.column-gap-minimal{
+    column-gap: 2vh;
+}
+
+.column-gap-small{
+    column-gap: 5vh;
+}
+
+.column-gap-medium{
+    column-gap: 8vh;
+}
+
+.column-gap-big{
+    column-gap: 12vh;
+}
+
+.row-gap-small{
+    row-gap: 5vh;
+}
+
+.row-gap-medium{
+    row-gap: 8vh;
+}
+
+.row-gap-big{
+    row-gap: 12vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.full-screen{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.content-wrapper{
+    margin: 11vh 30px;
+}
+
+.wrap-content{
+    flex-wrap: wrap;
+}
+
+.vertical-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-content{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-transformed{
+    writing-mode: vertical-lr;
+    direction: rtl;
+    transform: rotate(180deg);
+}
+
+.text-bold{
+    font-family: baldGilroy;
+}
+
+.text-gray{
+    color: #828282;
+}
+
+.text-black{
+    color: #000000;
+}
+
+.image-fill{
+    object-fit: fill;
+    max-width: 100%;
+    margin: 30px 0px;
+}
+
+.cover-image{
+    object-fit: cover;
+    object-position: 0px 0px;
+    image-rendering: pixelated;
+    min-width: 65vw;
+    max-height: 478px;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.btn-rounded{
+    border-radius: 30px;
+}
+
+.bg-black{
+    color: white;
+    background-color: black;
+}
+
+.footer_text{
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 450px) {
+    .header-text {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2vh;
+        margin-bottom: 4vh;
+    }
+
+    .text-transformed{
+        display: none;
+    }
+  }
